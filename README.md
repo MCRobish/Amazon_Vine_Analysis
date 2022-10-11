@@ -12,9 +12,15 @@ spark.sparkContext.addFile(url)
 df = spark.read.option("encoding", "UTF-8").csv(SparkFiles.get("amazon_reviews_us_Health_Personal_Care_v1_00.tsv.gz"), sep="\t", header=True, inferSchema=True)
 df.show()
 ```
+* Dataframes were then created to match the tables within PGAdmin. The example for the vine review table is shown below. Once all dataframes were created, they were loaded into PGAdmin with an Amazon RDS as the server.
+```
+# Create the vine_table. DataFrame
+vine_df = df.select(["review_id","star_rating","helpful_votes","total_votes","vine","verified_purchase"])
 
+vine_df.show(10)
+```
+* How many Vine reviews and non-Vine reviews were there?
 
-How many Vine reviews and non-Vine reviews were there?
 How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.

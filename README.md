@@ -19,8 +19,14 @@ vine_df = df.select(["review_id","star_rating","helpful_votes","total_votes","vi
 
 vine_df.show(10)
 ```
-* How many Vine reviews and non-Vine reviews were there?
+* The number of paid (Vine reviews) and unpaid reviews were calculated within the Vine_Review_Analysis.ipynb file. 
 
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+![image](https://user-images.githubusercontent.com/105991478/195216511-56dd112e-9cb9-49b5-8360-0ed81f806fd0.png)
+
+* There were also 191 paid 5-start ratings, and 59921 unpaid 5-star ratings:
+![image](https://user-images.githubusercontent.com/105991478/195216812-bbc9c07d-71a6-4e77-a4d0-4ddc81a33e1f.png)
+
+The percentage of paid and unpaid reviews that are 5-starts are shown below. 
+![image](https://user-images.githubusercontent.com/105991478/195216861-94956fd7-1ebb-48f0-8939-245875940add.png)
+
 Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.

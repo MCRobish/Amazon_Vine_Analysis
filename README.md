@@ -29,4 +29,6 @@ vine_df.show(10)
 The percentage of paid and unpaid reviews that are 5-starts are shown below. 
 ![image](https://user-images.githubusercontent.com/105991478/195216861-94956fd7-1ebb-48f0-8939-245875940add.png)
 
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+Summary: 
+
+According to the analysis for this dataset, there does not appear to be a positivity bias for paid reviews because the percentage of 5-star reviews is higher for unpaid reviews. The sample set for the unpaid reviews is also substantially larger than the paid reviews. It may make sense to complete this analysis on other related shopping categories with higher paid review counts to ensure this holds true. 
